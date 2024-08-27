@@ -20,7 +20,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 
 app.get("/", (req, res) => {
-  res.redirect("/api-docs");
+  res.redirect("/api/docs");
 });
 // set up swagger UI
 app.use('/api/docs', swaggerDocs, swaggerUiSetup);
